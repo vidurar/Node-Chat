@@ -8,7 +8,7 @@ const logger = new (winston.Logger)({
       filename:'./chatCatDebig.log',
       handledExceptions:true
     }),
-    new (winston.transports.console)({
+    new (winston.transports.Console)({
       level:'debug',
       json: true,
       handledExceptions: true
